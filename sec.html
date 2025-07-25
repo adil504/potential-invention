@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shaik Adil Presentation</title>
+  <style>
+     {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #4b4f57, hsl(217, 48%, 5%));
+      color: oklab(48.852000000000004% -0.1172 0.07146);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #1c1f2f;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #00ffc8;
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 5px black;
+    }
+
+    .profile-pic {
+      display: block;
+      margin: 0 auto 10px;
+      width: 200px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px lab(89.64% 11.07 4.07 / 0.836);
+    }
+
+    .caption {
+      text-align: center;
+      color: #ccc;
+      font-weight: 500;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    h2, h3 {
+      color: #00ffc8;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #00ffc8;
+      padding-bottom: 5px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #eee;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #00ffc8;
+      border-radius: 6px;
+      font-size: 16px;
+      background-color: #f3f3f3;
+      color: #000;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #00ffc8;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00b394;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-align: justify;
+      color: #ddd;
+    }
+
+    ul {
+      margin-left: 20px;
+      color: #ddd;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #000;
+      background-color: #00ffc8;
+      padding: 10px 20px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background-color: #00b394;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- 1. Title -->
+    <h1>SHAIK ADIL PRESENTATION PAGE</h1>
+
+    <!-- 2. Photo -->
+    <img src="https://nogunk.com/cdn/shop/articles/Zayn_Malik_with_lucious_messy_hair_1600x.jpg?v=1645109356" 
+         alt="SHAIKI ADIL" 
+         class="profile-pic"/>
+    <div class="caption" style="font-weight: bold;">SHAIK ADIL !</div>
+
+    <!-- 3. Personal Information -->
+    <h2>Personal Information</h2>
+    <form id="applicationForm">
+      <label for="username">User Name</label>
+      <input type="text" id="username" placeholder="Enter user name" required />
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="Enter email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter phone number" required />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password" required />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- 4. About Me -->
+    <h3>About Me</h3>
+    <p>I am currently learning web development. This is my first personal webpage project, built using HTML and CSS with a clean, modern design. I enjoy creating user interfaces and learning new skills every day.</p>
+
+    <!-- 5. My Interests -->
+    <h3>My Interests</h3>
+    <ul>
+      <li>Web Development</li>
+      <li>Designing Websites</li>
+      <li>Learning New Technologies</li>
+      <li>Traveling</li>
+      <li>Photography</li>
+      <li>Reading Books</li>
+    </ul>
+
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+  </div>
+</body>
+</html>

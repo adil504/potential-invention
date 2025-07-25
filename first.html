@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Application Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, lch(52.67% 48.01 22.9), #565c66);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .form-container {
+      background-color: #0b1101;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ffc8;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+
+    .form-container img {
+      display: block;
+      margin: 0 auto 20px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #00ffc8;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #ddd;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #00ffc8;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #000;
+      font-size: 16px;
+    }
+
+    .gender-options {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .gender-options label {
+      font-weight: normal;
+      color: #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00ffc8;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #00b394;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>APPLICATION FORM</h1>
+    <p>Please Register for Starbucks</p>
+    <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_100,h_100/f_auto,q_auto/v1706191816/ideas-and-advice-prod/blogadmin/Screenshot-2024-01-25-at-15.09.28/Screenshot-2024-01-25-at-15.09.28.png?_i=AA" alt="Starbucks Logo"/>
+
+    <form>
+      <label for="username">Username</label>
+      <input id="username" type="text" placeholder="Enter your username" required />
+
+      <label for="email">E-mail</label>
+      <input id="email" type="email" placeholder="Enter your email" required />
+
+      <label for="phone">Phone Number</label>
+      <input id="phone" type="tel" placeholder="Enter your phone number" required />
+
+      <label for="fatherName">Father's Name</label>
+      <input id="fatherName" type="text" placeholder="Enter father's name" required />
+
+      <label for="motherName">Mother's Name</label>
+      <input id="motherName" type="text" placeholder="Enter mother's name" required />
+
+      <label>Gender</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="Male" /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+        <label><input type="radio" name="gender" value="Others" /> Others</label>
+      </div>
+
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Enter your password" required />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

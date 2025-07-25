@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shaik Adil Presentation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #1a1d2b;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 34px;
+      font-weight: bold;
+      color: #00ffc8;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    .profile-section {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .profile-pic {
+      width: 240px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+
+    .caption {
+      font-size: 22px;
+      font-weight: bold;
+      color: #00ffc8;
+      margin-top: 12px;
+      margin-bottom: 20px;
+    }
+
+    h2, h3 {
+      color: #00ffc8;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #00ffc8;
+      padding-bottom: 5px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #ddd;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #00ffc8;
+      border-radius: 6px;
+      font-size: 16px;
+      background-color: #f3f3f3;
+      color: #000;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #00ffc8;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00b394;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-align: justify;
+      color: #ccc;
+    }
+
+    ul {
+      margin-left: 20px;
+      color: #ddd;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #000;
+      background-color: #00ffc8;
+      padding: 10px 20px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background-color: #00b394;
+    }
+
+    @media (max-width: 768px) {
+      .profile-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-info {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- 1. Title -->
+    <h1>SHAIK ADIL PRESENTATION PAGE</h1>
+
+    <!-- 2. Profile Section (Photo Left, Info Right) -->
+    <div class="profile-section">
+      <div>
+        <img src="https://nogunk.com/cdn/shop/articles/Zayn_Malik_with_lucious_messy_hair_1600x.jpg?v=1645109356" 
+             alt="Shaik Adil" 
+             class="profile-pic"/>
+        <div class="caption">Shaik Adil</div>
+      </div>
+      
+      <!-- 3. Personal Information Form -->
+      <div class="profile-info">
+        <h2>Personal Information</h2>
+        <form id="applicationForm">
+          <label for="username">User Name</label>
+          <input type="text" id="username" placeholder="Enter user name" required />
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Enter email" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter phone number" required />
+
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" required />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- 4. About Me -->
+    <h3>About Me</h3>
+    <p>I am currently learning web development. This is my first personal webpage project, built using HTML and CSS with a clean, modern design. I enjoy creating user interfaces and learning new skills every day.</p>
+
+    <!-- 5. My Interests -->
+    <h3>My Interests</h3>
+    <ul>
+      <li>Web Development</li>
+      <li>Designing Websites</li>
+      <li>Learning New Technologies</li>
+      <li>Traveling</li>
+      <li>Photography</li>
+      <li>Reading Books</li>
+    </ul>
+
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+  </div>
+</body>
+</html>

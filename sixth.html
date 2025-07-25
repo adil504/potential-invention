@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #1a1d2b;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      color: #00ffc8;
+      margin: 12px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background-color: #2a2d3b;
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .checkbox-group {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    .checkbox-group label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #00ffc8;
+      color: #000;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00b3a6;
+      transform: scale(1.03);
+    }
+
+    .links {
+      margin-top: 20px;
+    }
+
+    .links a {
+      margin: 0 10px;
+      color: #00ffc8;
+      font-size: 13px;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+      color: #00b3a6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Create Website</h1>
+    <p>Complete the form below</p>
+
+    <img src="https://digitalsynopsis.com/wp-content/uploads/2023/04/best-logos-of-all-time-lamborghini.jpg" width="200" height="200" />
+
+    <form>
+      <label for="name">Website Name</label>
+      <input type="text" id="name" required>
+
+      <label for="url">Website URL</label>
+      <input type="text" id="url" required>
+
+      <label for="desc">Short Description</label>
+      <input type="text" id="desc" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="pass">Password</label>
+      <input type="password" id="pass" required>
+
+      <label for="cpass">Confirm Password</label>
+      <input type="password" id="cpass" required>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" required> I agree to the terms</label>
+        <label><input type="checkbox"> Subscribe to newsletter</label>
+      </div>
+
+      <button type="submit">Create Website</button>
+    </form>
+
+    <div class="links">
+      <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+    </div>
+  </div>
+</body>
+</html>
